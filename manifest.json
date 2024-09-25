@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Linkedin Jobs Filter",
+  "version": "1.0",
+  "description": "Filter jobs on linkedin",
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "css": ["page.css"],
+      "matches": [
+        "https://www.linkedin.com/jobs/search/*"
+      ]
+    }
+  ],
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
